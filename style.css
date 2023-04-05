@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 125px 1fr 125px;
+    margin: 0px 325px 0px 325px;
+    font-family: 'Noto Serif', serif;
+    background-color: #FFFFFF;
+    background-image: ;
+    
+}
+header {
+    display: grid;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    color:#E80000;
+    font-size: 1.8em;
+}
+p+p {
+    color:black;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+    row-gap: 10px;
+}
+
+.linha_principal {
+    display: grid;
+    grid-template-areas:
+        "principal secundaria"
+        "principal secundaria";
+    gap: 10px;
+    grid-template-columns: 7fr 6fr;
+}
+
+.imagemPrincipal {
+    grid-area: principal;
+    background-image: url(./img/mosaico.jpg);
+    background-size: cover;
+    display: grid;
+    place-items: end start;
+}
+
+.segunda_linha{
+    height: 2.3em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+.faixa__informacoes:hover {
+    opacity: 1;
+}
+
+.segundaImagem {
+    background-image: url(./img/mundial.jpg);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.segundaImagem p {
+    color: white;
+    opacity: 1;
+    font-size: 0.9em;
+    opacity: 1;
+}
+
+.comprar {
+    background-color: whitesmoke;
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+.comprar a {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+img[alt~="botao"] {
+    height: 2em;
+    width: 2em;
+}
+
+.segundaImagem {
+    grid-area: secundaria;
+    display: grid;
+    grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
